@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('panpm run serveth')
 const name = 'Vue Typescript Admin'
 const IS_PROD = ['production', 'development'].includes(process.env.NODE_ENV)
 
