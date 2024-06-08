@@ -41,4 +41,22 @@ public interface EmployeeService {
      * @date 2024/5/15 14:57
      */
     void startOrStop(Integer status, Long id);
+
+    /**
+     * @param id:
+     * @return Employee
+     * @author yxb
+     * @description 根据id查询员工
+     * @date 2024/6/8 16:45
+     */
+    Employee getById(Long id);
+
+    /**
+     * @param employeeDTO:
+     * @return void
+     * @author yxb
+     * @description编辑员工信息
+     * @date 2024/6/8 17:05
+     */
+    void update(EmployeeDTO employeeDTO);
 }
