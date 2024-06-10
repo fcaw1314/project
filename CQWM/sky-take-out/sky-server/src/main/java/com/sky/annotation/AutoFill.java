@@ -8,7 +8,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @param null:
+ * @param :
  * @return null
  * @author yxb
  * @description 自定义注解,用于标识某个方法需要进行功能字段自动填充出来
