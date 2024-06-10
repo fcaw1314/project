@@ -11,7 +11,8 @@ import java.util.List;
 public interface DishService {
 
     //新增菜品和对应口味数据
-    public void saveWithFlaver(DishDTO dishDTO);
+    public void saveWithFlavor(DishDTO dishDTO);
+
 
     PageResult pageQuery(DishPageQueryDTO dishPageQueryDTO);
 
@@ -50,4 +51,14 @@ public interface DishService {
      * @return
      */
     List<DishVO> listWithFlavor(Dish dish);
+
+    /**
+     * 菜品起售停售
+     * @param status
+     * @param id
+     */
+    void startOrStop(Integer status, Long id);
+
+
+
 }

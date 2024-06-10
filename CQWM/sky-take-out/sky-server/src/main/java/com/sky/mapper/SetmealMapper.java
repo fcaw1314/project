@@ -39,6 +39,14 @@ public interface SetmealMapper {
     Page<SetmealVO> pageQuery(SetmealPageQueryDTO setmealPageQueryDTO);
 
     /**
+     * 根据id修改套餐
+     *
+     * @param setmeal
+     */
+    @AutoFill(OperationType.UPDATE)
+    void update(Setmeal setmeal);
+
+    /**
      * 根据id查询套餐
      * @param id
      * @return
@@ -52,10 +60,6 @@ public interface SetmealMapper {
      */
     @Delete("delete from setmeal where id = #{id}")
     void deleteById(Long setmealId);
-
-    //修改套餐表，执行update
-    @AutoFill(OperationType.UPDATE)
-    void update(Setmeal setmeal);
 
     /**
      * 动态条件查询套餐
