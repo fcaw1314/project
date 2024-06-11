@@ -17,5 +17,14 @@ sky:
       password: 123456
       database: 10
   wechat:
+#    如果以后有商户ID,appid改为商户号id,和微信小程序对应
       appid: wxaf44bdd2846c4451
       secret: c674064c53648c4fdb6c40a273625815
+      mchid: 1561414331
+      mchSerialNo: 4B3B3DC35414AD50B1B755BAF8DE9CC7CF407606
+      privateKeyFilePath: D:\apiclient_key.pem
+      apiV3Key: CZBK51236435wxpay435434323FFDuv3
+#      weChatPayCertFilePath: D:\wechatpay_166D96F876F45C7D07CE98952A96EC980368ACFC.pem
+      notifyUrl: https://4bbf1e98.r26.cpolar.top/notify/paySuccess
+      refundNotifyUrl: https://4bbf1e98.r26.cpolar.top/notify/refundSuccess
+
